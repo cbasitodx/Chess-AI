@@ -1,25 +1,22 @@
 package com.chessEngine.board;
 
-import com.chessEngine.board.Board;
 import com.chessEngine.pieces.*;
 
 public class ChessBoard implements Board{
 
-    public enum Players{
-        BLACK,
-        WHITE,
-        NONE
-    }
+    //public enum Players{
+    //    BLACK,
+    //    WHITE,
+    //    NONE
+    //}
     
-    private int dims;
+    private int dims = 8; //Set by default to 8
     private boolean[][] graphicsBoard;
     private ChessPiece[][] gameBoard;
-    private Players winner = Players.NONE; //Set default to NONE because no one is winning the current match
+    //private Players winner = Players.NONE; //Set default to NONE because no one is winning the current match
 
-    public ChessBoard(int dims)
+    public ChessBoard()
     {
-        this.dims = dims;
-
         this.graphicsBoard = new boolean[this.dims][this.dims];
         this.gameBoard = new ChessPiece[this.dims][this.dims]; //Initialising the game board to null
 
@@ -49,7 +46,7 @@ public class ChessBoard implements Board{
 
     public void initBoard(String[] pieces)
     {
-        //GameParser.fillBoard(pieces);
+        this.gameBoard = GameParser.initBoard(pieces, this.gameBoard);
     }
 
     public void addPiece(Piece piece, String position) //throws Exception

@@ -23,8 +23,6 @@ public class ChessBoard implements Board{
         //Initialises and fills the graphic board
         boolean shadedTile = false;
 
-        boolean evenBoard = this.dims % 2 == 0; //Conditional that checks if the dimension of the board is even or not
-
         for(int i = 0; i < this.dims; i++)
         {
             for(int j = 0; j < this.dims; j++)
@@ -32,10 +30,7 @@ public class ChessBoard implements Board{
                 shadedTile = !shadedTile;
                 this.graphicsBoard[i][j] = shadedTile;
             }
-            if(evenBoard)
-            {
-                shadedTile = !shadedTile;
-            }
+            shadedTile = !shadedTile;
         }
     }
 

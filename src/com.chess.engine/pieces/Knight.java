@@ -1,7 +1,7 @@
 package com.chess.engine.pieces;
 
-import com.chess.engine.pieces.Piece;
+import com.chess.engine.pieces.ChessPiece;
 
-public class Knight extends Piece{
+public class Knight extends ChessPiece{
     
 }

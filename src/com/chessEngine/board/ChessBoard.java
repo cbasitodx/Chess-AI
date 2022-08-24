@@ -132,7 +132,7 @@ public class ChessBoard implements Board{
                 }
                 else if(currentTile instanceof Knight)
                 {
-                    board += " " + "K";
+                    board += " " + "N";
                 }
                 else if(currentTile instanceof Pawn)
                 {

@@ -83,6 +83,4 @@ public interface Board{
      * @return A String that represents the current state of the board 
      */
     public String toString();
-
-
 }

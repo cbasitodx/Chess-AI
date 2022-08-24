@@ -1,4 +1,4 @@
-package com.chess.engine.board;
+package com.chessEngine.board;
 
 public class GameParser {
     

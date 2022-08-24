@@ -1,4 +1,4 @@
-package com.chess.engine.pieces;
+package com.chessEngine.pieces;
 
 public interface Piece {
     

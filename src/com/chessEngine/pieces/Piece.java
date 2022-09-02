@@ -1,9 +1,9 @@
 package com.chessEngine.pieces;
 
 public interface Piece {
-    //boolean checkMove()
+	
+    boolean checkMove(int toRow, int toCol);
 
-    //void move()
+    void move(int toRow, int toCol);
 
-    //
 }
